@@ -16,7 +16,7 @@ Most of the materials for the course are outlined below, but there are also dire
 
 **All slides have password `!vue!`**
 
-- [Building Web Apps with Vue and Nuxt: Intro]()
+- [Building Web Apps with Vue and Nuxt: Intro](https://slides.com/sdrasner/vueapps1?token=ov5v8sUr)
 
 ## Directories
 
