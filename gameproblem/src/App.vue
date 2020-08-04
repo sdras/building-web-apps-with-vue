@@ -74,8 +74,6 @@
           </p>
         </div>
       </section>
-
-      <final-result v-else />
     </div>
   </div>
 </template>
@@ -91,7 +89,6 @@ import Friend from "@/components/Friend.vue";
 import Artist from "@/components/Artist.vue";
 import Zombie from "@/components/Zombie.vue";
 import Mechanic from "@/components/Mechanic.vue";
-import FinalResult from "@/components/FinalResult.vue";
 
 export default {
   components: {
@@ -102,7 +99,6 @@ export default {
     Artist,
     Zombie,
     Mechanic,
-    FinalResult,
   },
   data() {
     return {
