@@ -16,13 +16,14 @@ Most of the materials for the course are outlined below, but there are also dire
 
 **All slides have password `!vue!`**
 
-- [Building Web Apps with Vue and Nuxt: Intro](https://slides.com/sdrasner/vueapps1?token=ov5v8sUr)
+- [Building Web Apps with Vue and Nuxt 1: Intro](https://slides.com/sdrasner/vueapps1?token=ov5v8sUr)
+- [Building Web Apps with Vue and Nuxt 1: Warmup Game](https://slides.com/sdrasner/vueapps2?token=oePuyn8o)
 
 ## Directories
 
 ### Game warmup
 
-- gamestarter- Starter for game, resources and materials
+- gameresources- resources and materials for the game
 - gameproblem- state that the game is in for the workshop problem
 - gamesolution- the end state for the game
 
