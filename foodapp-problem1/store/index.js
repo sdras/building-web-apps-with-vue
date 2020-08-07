@@ -15,7 +15,8 @@ export const state = () => ({
           id: "e85dbacc-f721-44e6-af8c-eda2835e2e50",
           options: ["Al Pastor", "Carnitas", "Lengua", "Carne Asada", "Pollo"],
           addOns: ["sour cream", "avocado", "pico de gallo", "queso"],
-          amount: 0
+          description:
+            "Soft tortilla, your choice of meat, onions, cilantro & salsa"
         },
         {
           item: "Quesadilla",
@@ -24,7 +25,7 @@ export const state = () => ({
           id: "e956a779-941f-41ef-874e-d5f6a6c6e0cb",
           options: ["Plain", "Carne Asada", "Pollo"],
           addOns: ["sour cream", "guacamole", "pico de gallo"],
-          amount: 0
+          description: "Flour tortilla, melted cheese & optional meat choice"
         },
         {
           item: "Burrito",
@@ -33,7 +34,7 @@ export const state = () => ({
           id: "ecd7c207-acd7-4b58-8685-894ba622949e",
           options: ["Al Pastor", "Carnitas", "Lengua", "Carne Asada", "Pollo"],
           addOns: ["sour cream", "avocado", "pico de gallo", "queso"],
-          amount: 0
+          description: "Any meat, rice, beans, onions, cilantro & salsa"
         }
       ]
     },
@@ -64,7 +65,7 @@ export const state = () => ({
             { "Extra Large": 21.25 }
           ],
           id: "7644eba9-d6a8-466f-bd49-781bc005cfe5",
-          amount: 0
+          description: "Design your own pizza"
         },
         {
           item: "MeatLovers",
@@ -76,7 +77,8 @@ export const state = () => ({
             { "Extra Large": 21.25 }
           ],
           id: "70ceec44-3ccb-4f92-b149-0ebe2c10704b",
-          amount: 0
+          description:
+            "A Carnivore’s delight. Pepperoni, Sausage, Salami & Canadian Bacon."
         },
         {
           item: "Veggie",
@@ -88,7 +90,7 @@ export const state = () => ({
             { "Extra Large": 21.25 }
           ],
           id: "b27f4d8e-7235-42f9-b0a7-98e76a1afaf0",
-          amount: 0
+          description: "Tomatoes, Olives, Garlic, Onions, Mushrooms & Bells."
         }
       ]
     },
@@ -108,7 +110,7 @@ export const state = () => ({
             { "Large: 6 dumplings": 11.99 }
           ],
           id: "22672b93-2c65-4fd9-b151-683f7eb7df4a",
-          amount: 0
+          description: "Whole shrimp in a translucent wrapper."
         },
         {
           item: "Soup Dumplings",
@@ -118,7 +120,7 @@ export const state = () => ({
             { "Large: 6 dumplings": 11.99 }
           ],
           id: "3a6da02c-2354-4eb8-af07-f9f2d26fa7c2",
-          amount: 0
+          description: "Dumplings filled with pork, crab meat and broth."
         },
         {
           item: "Stuffed Eggplant",
@@ -128,7 +130,7 @@ export const state = () => ({
             { "Large: 6 pieces": 11.99 }
           ],
           id: "cadd2903-b9cb-4053-9720-c096cc95e8a5",
-          amount: 0
+          description: "Chinese eggplant filled with ground shrimp in sauce"
         }
       ]
     }
