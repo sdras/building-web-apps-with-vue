@@ -29,9 +29,11 @@ Most of the materials for the course are outlined below, but there are also dire
 
 ### CRUD Application
 
-- crudstarter- Starter for CRUD application, resources and materials
-- crudproblem1- state that the game is in for the workshop problem
-- crudsolution1- the end state for the game
+- foodappresources- resources and materials for the food app
+- foodappproblem1- first food app exercise
+- foodappsolution1- first food app exercise solution
+- foodappproblem2- second food app exercise
+- foodappsolution2- second food app exercise solution
 
 ## License
 
