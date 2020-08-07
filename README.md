@@ -1,4 +1,5 @@
 # Building Web Apps with Vue and Nuxt
+
 Course Materials
 
 Author: Sarah Drasner
@@ -7,7 +8,7 @@ Author: Sarah Drasner
 
 This repo houses the materials and resources for the Building Web Apps with Vue and Nuxt course on Frontend Masters. This course uses Vue 3.
 
-Most of the materials for the course are outlined below, but there are also directories housed here of very basic examples of some of the techniques we will cover so that students don't have to spend a lot of time researching in order to get started. 
+Most of the materials for the course are outlined below, but there are also directories housed here of very basic examples of some of the techniques we will cover so that students don't have to spend a lot of time researching in order to get started.
 
 - Here are the [Vue chrome devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en)
 - Here are the snippets I'll be using [vue vscode snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets)
@@ -17,7 +18,8 @@ Most of the materials for the course are outlined below, but there are also dire
 **All slides have password `!vue!`**
 
 - [Building Web Apps with Vue and Nuxt 1: Intro](https://slides.com/sdrasner/vueapps1?token=ov5v8sUr)
-- [Building Web Apps with Vue and Nuxt 1: Warmup Game](https://slides.com/sdrasner/vueapps2?token=oePuyn8o)
+- [Building Web Apps with Vue and Nuxt 2: Warmup Game](https://slides.com/sdrasner/vueapps2?token=oePuyn8o)
+- [Building Web Apps with Vue and Nuxt 3: Food Application](https://slides.com/sdrasner/building-vue-apps-3-foodapp?token=DiquCMbB)
 
 ## Directories
 
@@ -27,13 +29,11 @@ Most of the materials for the course are outlined below, but there are also dire
 - gameproblem- state that the game is in for the workshop problem
 - gamesolution- the end state for the game
 
-### CRUD Application
+### Food Application
 
-- foodappresources- resources and materials for the food app
-- foodappproblem1- first food app exercise
-- foodappsolution1- first food app exercise solution
-- foodappproblem2- second food app exercise
-- foodappsolution2- second food app exercise solution
+- foodappresources- resources and materials for Food application
+- foodappproblem1- state that the application is in for the workshop problem
+- foodappsolution1- solution for the first problem
 
 ## License
 
