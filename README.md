@@ -20,6 +20,7 @@ Most of the materials for the course are outlined below, but there are also dire
 - [Building Web Apps with Vue and Nuxt 1: Intro](https://slides.com/sdrasner/vueapps1?token=ov5v8sUr)
 - [Building Web Apps with Vue and Nuxt 2: Warmup Game](https://slides.com/sdrasner/vueapps2?token=oePuyn8o)
 - [Building Web Apps with Vue and Nuxt 3: Food Application](https://slides.com/sdrasner/building-vue-apps-3-foodapp?token=DiquCMbB)
+- [Building Web Apps with Vue and Nuxt 4: Composition API](https://slides.com/sdrasner/building-vue-apps-4-compositionapi?token=IAnBmcyn)
 
 ## Directories
 
@@ -34,6 +35,11 @@ Most of the materials for the course are outlined below, but there are also dire
 - foodappresources- resources and materials for Food application
 - foodappproblem1- state that the application is in for the workshop problem
 - foodappsolution1- solution for the first problem
+
+### Composition API
+
+- compapistart- start of the application, setup
+- compapisolution- end of the solution of the composition API challenge
 
 ## License
 
