@@ -44,7 +44,7 @@
         </div>
       </fieldset>
 
-      <app-toast>
+      <app-toast v-if="cartSubmitted">
         Order Added!
         <br />Return to
         <nuxt-link to="/restaurants">restaurants</nuxt-link>
