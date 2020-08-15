@@ -1,5 +1,3 @@
-import { v4 as uuidv4 } from "uuid";
-
 export const state = () => ({
   cart: [],
   fooddata: [
@@ -161,11 +159,11 @@ export const state = () => ({
 //   }
 // }
 
-// export const mutations = {
-//   updateValue: (state, payload) => {
-//     state.value = payload
-//   }
-// }
+export const mutations = {
+  addToCart: (state, formOutput) => {
+    state.cart.push(formOutput);
+  }
+};
 
 // export const actions = {
 //   updateActionValue({ commit }) {
