@@ -13,10 +13,9 @@ import AppRestaurantInfo from "@/components/AppRestaurantInfo.vue";
 
 export default {
   components: {
-    AppSelect,
     AppRestaurantInfo: () =>
-      import(/* webpackPrefetch: true */ "@/components/AppRestaurantInfo.vue")
-  }
+      import(/* webpackPrefetch: true */ "@/components/AppRestaurantInfo.vue"),
+  },
 };
 </script>
 
