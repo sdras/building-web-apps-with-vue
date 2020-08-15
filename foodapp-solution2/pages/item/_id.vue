@@ -68,8 +68,7 @@ export default {
       itemOptions: "",
       itemAddons: [],
       itemSizeAndCost: [],
-      cartSubmitted: false,
-      errors: false
+      cartSubmitted: false
     };
   },
   computed: {
