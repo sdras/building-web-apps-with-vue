@@ -26,20 +26,24 @@ Most of the materials for the course are outlined below, but there are also dire
 
 ### Game warmup
 
-- gameresources- resources and materials for the game
-- gameproblem- state that the game is in for the workshop problem
-- gamesolution- the end state for the game
+- game-resources- resources and materials for the game
+- game-problem
+- game-solution
 
 ### Food Application
 
-- foodappresources- resources and materials for Food application
-- foodappproblem1- state that the application is in for the workshop problem
-- foodappsolution1- solution for the first problem
+- foodapp-resources- resources and materials for Food application
+- foodapp-problem1
+- foodapp-solution1
+- foodapp-problem2
+- foodapp-solution2
+- foodapp-problem3
+- foodapp-solution3
 
 ### Composition API
 
-- compapistart- start of the application, setup
-- compapisolution- end of the solution of the composition API challenge
+- compapi-start
+- compapi-solution
 
 ## License
 
