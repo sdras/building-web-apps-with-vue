@@ -4,6 +4,9 @@
       <li>
         <nuxt-link exact to="/">Home</nuxt-link>
       </li>
+      <li>
+        <nuxt-link to="/tacofriends">Our Taco Friends</nuxt-link>
+      </li>
     </ul>
   </nav>
 </template>

@@ -55,5 +55,9 @@ main {
   text-align: center;
   line-height: 2;
   padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>
