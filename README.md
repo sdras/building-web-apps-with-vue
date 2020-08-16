@@ -2,7 +2,7 @@
 
 Course Materials
 
-Author: Sarah Drasner
+_Author: Sarah Drasner_
 
 ## Upcoming workshop live on Sept 25, 2020, [join here](https://frontendmasters.com/workshops/building-apps-vue/)
 
