@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="contain">
-      <modal v-if="uiState === 'start'" class="beginmodal modal">
+      <Modal v-if="uiState === 'start'" class="beginmodal modal">
         <h2>Which hooman do you want to be?</h2>
         <p v-for="option in characterChoices" :key="option" class="char-chooser">
           <input v-model="characterinput" :id="option" :value="option" type="radio" />
@@ -9,7 +9,7 @@
           <br />
         </p>
         <button @click="pickCharacter">Pick your character</button>
-      </modal>
+      </Modal>
 
       <section v-else-if="uiState === 'characterChosen'">
         <svg viewBox="0 -180 1628 1180" class="main">
@@ -22,11 +22,10 @@
             </clipPath>
           </defs>
 
-          <friend />
-          <score />
+          <Friend />
+          <Score />
 
-          <component :is="character" class="character-clip" />
-          <zombie class="zombie-clip" />
+          <component :is="character" />
 
           <text
             x="1000"
@@ -129,14 +128,6 @@ export default {
         [array[i], array[j]] = [array[j], array[i]];
       }
       return array;
-    },
-  },
-  watch: {
-    score(newValue, oldValue) {
-      console.log(oldValue);
-      gsap.to(".bottom-clip-path, .top-clip-path", {
-        y: -newValue * 3,
-      });
     },
   },
 };
