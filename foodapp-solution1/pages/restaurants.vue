@@ -3,20 +3,10 @@
     <div class="restaurantheading">
       <h1>Restaurants</h1>
     </div>
-
-    <AppRestaurantInfo />
   </main>
 </template>
 
 <script>
-import AppRestaurantInfo from "@/components/AppRestaurantInfo.vue";
-
-export default {
-  components: {
-    AppRestaurantInfo: () =>
-      import(/* webpackPrefetch: true */ "@/components/AppRestaurantInfo.vue"),
-  },
-};
 </script>
 
 <style lang="scss" scoped>
@@ -28,9 +18,5 @@ export default {
 
 h1 {
   margin-right: 40px;
-}
-
-.filter {
-  padding-right: 200px;
 }
 </style>
