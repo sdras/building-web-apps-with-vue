@@ -26,15 +26,18 @@ nav {
   align-items: center;
   display: flex;
   justify-content: space-between;
+
   a {
     color: white;
     text-decoration: none;
   }
+
   ul {
     display: flex;
     align-items: center;
     list-style: none;
     padding: 0;
+
     li {
       padding-right: 40px;
     }
@@ -71,9 +74,11 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
+
 button:hover {
   background: #63b6b8;
 }
+
 button:focus {
   outline: 1px solid #fff;
   outline-offset: -4px;
@@ -86,6 +91,7 @@ button:focus {
   border: 1px solid #555;
   color: black;
 }
+
 .ghost:hover {
   background: #eee;
 }
@@ -115,6 +121,7 @@ fieldset {
 .label {
   margin: 15px 0;
   line-height: 1.6;
+
   span {
     font-size: 14px;
     padding: 8px 12px;
@@ -127,6 +134,21 @@ fieldset {
 
 select {
   padding: 3px;
+}
+
+footer {
+  background: black;
+  width: 100%;
+  padding: 10px 30px;
+  color: white;
+  text-align: center;
+
+  a,
+  a:visited,
+  a:active {
+    color: #c4c3ec;
+    font-weight: bold;
+  }
 }
 
 // table styles
@@ -246,4 +268,67 @@ table th {
   font-size: 10px;
   padding: 6px 10px;
   font-weight: bold;
+}
+
+/* Page-specific styles */
+
+.restaurant {
+  .restaurantheading {
+    margin: 100px 0 20px 200px;
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    margin-right: 40px;
+  }
+
+  .filter {
+    padding-right: 200px;
+  }
+}
+
+// restaurant info
+
+section.restaurantinfo {
+  padding: 20px 200px;
+
+  .fooditems {
+    height: 250px;
+    border-radius: 5px;
+    background-size: cover;
+    position: relative;
+    box-shadow: 2px 6px 6px 0 rgb(215, 215, 215);
+  }
+
+  .iteminfo {
+    background: white;
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+//cart page
+
+.cart.container {
+  padding: 100px;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+  }
+
+  .total {
+    font-weight: bold;
+  }
+
+  .emptycart {
+    text-align: center;
+    line-height: 2;
+  }
 }

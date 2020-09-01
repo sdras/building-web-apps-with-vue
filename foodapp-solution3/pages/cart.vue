@@ -1,5 +1,5 @@
 <template>
-  <main class="container">
+  <main class="cart container">
     <h2>Your Cart</h2>
     <AppEmptyCart />
 
@@ -57,22 +57,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-  padding: 100px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-h2 {
-  text-align: center;
-}
-
-.total {
-  font-weight: bold;
-}
-
-.emptycart {
-  text-align: center;
-  line-height: 2;
-}
 </style>

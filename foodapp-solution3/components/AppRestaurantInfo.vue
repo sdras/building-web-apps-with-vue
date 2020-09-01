@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="restaurantinfo">
     <div v-for="store in datasource" :key="store.id">
       <h2>{{ store.name }}</h2>
       <p>Delivery Time {{ store.deliveryTime }}</p>
@@ -33,37 +33,16 @@
 export default {
   props: {
     datasource: {
-      type: [Array, Object]
-    }
+      type: [Array, Object],
+    },
   },
   methods: {
     prices(menuitem) {
       return "$" + menuitem.price.toFixed(2);
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-section {
-  padding: 20px 200px;
-}
-
-.fooditems {
-  height: 250px;
-  border-radius: 5px;
-  background-size: cover;
-  position: relative;
-  box-shadow: 2px 6px 6px 0 rgb(215, 215, 215);
-}
-
-.iteminfo {
-  background: white;
-  width: 100%;
-  padding: 15px;
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  justify-content: space-between;
-}
 </style>

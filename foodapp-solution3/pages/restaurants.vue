@@ -1,5 +1,5 @@
 <template>
-  <main class="container">
+  <main class="container restaurant">
     <div class="restaurantheading">
       <h1>Restaurants</h1>
 
@@ -23,42 +23,29 @@ export default {
   components: {
     AppSelect,
     AppRestaurantInfo: () =>
-      import(/* webpackPrefetch: true */ "@/components/AppRestaurantInfo.vue")
+      import(/* webpackPrefetch: true */ "@/components/AppRestaurantInfo.vue"),
   },
   data() {
     return {
       selectedCuisine: "",
       restaurantType: "cuisine",
-      restaurantOptions: ["tacos", "pizza", "dim sum"]
+      restaurantOptions: ["tacos", "pizza", "dim sum"],
     };
   },
   computed: {
     ...mapState(["fooddata"]),
     filteredRestaurants() {
       if (this.selectedCuisine) {
-        return this.fooddata.filter(el => {
+        return this.fooddata.filter((el) => {
           let name = el.name.toLowerCase();
           return name.includes(this.selectedCuisine);
         });
       }
       return this.fooddata;
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-.restaurantheading {
-  margin: 100px 0 20px 200px;
-  display: flex;
-  align-items: center;
-}
-
-h1 {
-  margin-right: 40px;
-}
-
-.filter {
-  padding-right: 200px;
-}
 </style>
