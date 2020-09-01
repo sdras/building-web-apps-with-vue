@@ -22,6 +22,9 @@ export const mutations = {
   addToCart: (state, formOutput) => {
     formOutput.id = uuidv4();
     state.cart.push(formOutput);
+  },
+  updateFoodData: (state, data) => {
+    state.fooddata = data;
   }
 };
 

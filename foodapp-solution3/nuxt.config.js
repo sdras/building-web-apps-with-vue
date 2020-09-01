@@ -15,21 +15,27 @@ export default {
    */
   head: {
     title: "Nuxt Food App",
-    meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+    meta: [{
+        charset: "utf-8"
+      },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1"
+      },
       {
         hid: "description",
         name: "description",
         content: "Demo of Nuxt and Vue"
       }
     ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+    link: [{
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/favicon.ico"
+      },
       {
         rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Poppins:wght@600&display=swap"
+        href: "https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Poppins:wght@600&display=swap"
       }
     ]
   },
@@ -41,7 +47,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ["~/plugins/vuelidate.js"],
+  plugins: ["~/plugins/getfood.server.js", "~/plugins/vuelidate.js"],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
