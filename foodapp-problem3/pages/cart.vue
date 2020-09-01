@@ -1,9 +1,8 @@
 <template>
   <main class="cart container">
     <h2>Your Cart</h2>
-    <AppEmptyCart />
 
-    <section v-if="cart.length">
+    <section>
       <table>
         <thead>
           <tr>
@@ -28,10 +27,6 @@
             <td>{{ item.count }}</td>
             <td>{{ item.combinedPrice }}</td>
           </tr>
-          <tr>
-            <td colspan="3"></td>
-            <td class="total">Total: ${{ totalPrice.toFixed(2) }}</td>
-          </tr>
         </tbody>
       </table>
     </section>
@@ -39,18 +34,10 @@
 </template>
 
 <script>
-import AppEmptyCart from "@/components/AppEmptyCart.vue";
-
 export default {
-  components: {
-    AppEmptyCart,
-  },
   computed: {
     cart() {
       return this.$store.state.cart;
-    },
-    totalPrice() {
-      return this.$store.getters.totalPrice;
     },
   },
 };
