@@ -1,9 +1,6 @@
 <template>
   <main class="container">
-    <section
-      class="image"
-      :style="`background: url(/${currentItem.img}) no-repeat center center`"
-    ></section>
+    <section class="image" :style="`background: url(/${currentItem.img}) no-repeat center center`"></section>
 
     <section class="details">
       <h1>{{ currentItem.item }}</h1>
@@ -12,9 +9,7 @@
 
       <div class="quantity">
         <input type="number" min="1" v-model="count" />
-        <button class="primary" @click="addToCart">
-          Add to Cart - ${{ combinedPrice }}
-        </button>
+        <button class="primary" @click="addToCart">Add to Cart - ${{ combinedPrice }}</button>
       </div>
 
       <fieldset v-if="currentItem.options">
@@ -22,13 +17,7 @@
           <h3>Options</h3>
         </legend>
         <div v-for="option in currentItem.options" :key="option">
-          <input
-            type="radio"
-            name="option"
-            :id="option"
-            :value="option"
-            v-model="itemOptions"
-          />
+          <input type="radio" name="option" :id="option" :value="option" v-model="itemOptions" />
           <label :for="option">{{ option }}</label>
         </div>
       </fieldset>
@@ -38,13 +27,7 @@
           <h3>Add Ons</h3>
         </legend>
         <div v-for="addon in currentItem.addOns" :key="addon">
-          <input
-            type="checkbox"
-            name="addon"
-            :id="addon"
-            :value="addon"
-            v-model="itemAddons"
-          />
+          <input type="checkbox" name="addon" :id="addon" :value="addon" v-model="itemAddons" />
           <label :for="addon">{{ addon }}</label>
         </div>
       </fieldset>
@@ -69,7 +52,7 @@ import AppToast from "@/components/AppToast.vue";
 
 export default {
   components: {
-    AppToast
+    AppToast,
   },
   data() {
     return {
@@ -79,7 +62,6 @@ export default {
       itemAddons: [],
       itemSizeAndCost: [],
       cartSubmitted: false,
-      errors: false
     };
   },
   computed: {
@@ -102,7 +84,7 @@ export default {
     combinedPrice() {
       let total = this.count * this.currentItem.price;
       return total.toFixed(2);
-    }
+    },
   },
   methods: {
     addToCart() {
@@ -112,13 +94,13 @@ export default {
         count: this.count,
         options: this.itemOptions,
         addOns: this.itemAddons,
-        combinedPrice: this.combinedPrice
+        combinedPrice: this.combinedPrice,
       };
 
       this.cartSubmitted = true;
       this.$store.commit("addToCart", formOutput);
-    }
-  }
+    },
+  },
 };
 </script>
 
