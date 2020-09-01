@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <main class="container">
     <AppHeader />
     <AppRestaurantInfo :datasource="fooddata" />
-  </div>
+  </main>
 </template>
 
 <script>
