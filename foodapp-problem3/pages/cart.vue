@@ -27,6 +27,10 @@
             <td>{{ item.count }}</td>
             <td>{{ item.combinedPrice }}</td>
           </tr>
+          <tr>
+            <td colspan="3"></td>
+            <td class="total">Total:</td>
+          </tr>
         </tbody>
       </table>
     </section>

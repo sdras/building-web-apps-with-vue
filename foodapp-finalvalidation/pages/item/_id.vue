@@ -116,7 +116,6 @@ export default {
   methods: {
     addToCart() {
       let formOutput = {
-        id: this.id,
         item: this.currentItem.item,
         count: this.count,
         options: this.itemOptions,
