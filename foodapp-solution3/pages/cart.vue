@@ -19,10 +19,7 @@
               <span v-if="item.options">- {{ item.options }}</span>
             </td>
             <td>
-              <span v-if="item.addOns && item.addOns.length">
-                <span v-for="addon in item.addOns" :key="addon" class="comma">{{ addon }}</span>
-              </span>
-              <span v-else>&mdash;</span>
+              <span v-for="addon in item.addOns" :key="addon" class="comma">{{ addon }}</span>
             </td>
             <td>{{ item.count }}</td>
             <td>{{ item.combinedPrice }}</td>
