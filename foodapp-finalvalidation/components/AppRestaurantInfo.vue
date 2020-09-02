@@ -17,7 +17,7 @@
           <div class="iteminfo">
             <div class="menuiteminfo">
               <h4>{{ menuitem.item }}</h4>
-              <p>{{ prices(menuitem) }}</p>
+              <p>{{ priceFormatting(menuitem.price) }}</p>
             </div>
             <nuxt-link :to="`item/${menuitem.id}`">
               <button class="ghost">View Item ></button>
@@ -37,8 +37,8 @@ export default {
     },
   },
   methods: {
-    prices(menuitem) {
-      return "$" + menuitem.price.toFixed(2);
+    priceFormatting(item) {
+      return "$" + item.toFixed(2);
     },
   },
 };
