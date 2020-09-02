@@ -3,11 +3,7 @@
     <div class="restaurantheading">
       <h1>Restaurants</h1>
 
-      <app-select
-        @change="selectedCuisine = $event"
-        :select="restaurantType"
-        :selectoptions="restaurantOptions"
-      />
+      <app-select @change="selectedRestaurant = $event" :selectoptions="restaurantOptions" />
     </div>
 
     <AppRestaurantInfo :datasource="filteredRestaurants" />
@@ -27,18 +23,17 @@ export default {
   },
   data() {
     return {
-      selectedCuisine: "",
-      restaurantType: "cuisine",
+      selectedRestaurant: "",
       restaurantOptions: ["tacos", "pizza", "dim sum"],
     };
   },
   computed: {
     ...mapState(["fooddata"]),
     filteredRestaurants() {
-      if (this.selectedCuisine) {
+      if (this.selectedRestaurant) {
         return this.fooddata.filter((el) => {
           let name = el.name.toLowerCase();
-          return name.includes(this.selectedCuisine);
+          return name.includes(this.selectedRestaurant);
         });
       }
       return this.fooddata;
