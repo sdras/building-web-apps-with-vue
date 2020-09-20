@@ -139,7 +139,7 @@ export default {
     score(newValue, oldValue) {
       console.log(oldValue);
       gsap.to(".bottom-clip-path, .top-clip-path", {
-        y: -newValue * 3,
+        y: -newValue * 6,
       });
     },
   },
