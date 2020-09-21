@@ -10,8 +10,7 @@ export default new Vuex.Store({
     character: "",
     characterChoices: ["baker", "mechanic", "artist"],
     questionIndex: 0,
-    questions: [
-      {
+    questions: [{
         question: `What's your dog's name?`,
         baker: "Woofgang Puck",
         mechanic: "Alf",
@@ -65,12 +64,10 @@ export default new Vuex.Store({
       if (state.questionIndex < state.questions.length - 1) {
         state.questionIndex++
       } else {
-        Math.sign(state.score) > 0
-          ? (state.uiState = "won")
-          : (state.uiState = "lost")
+        Math.sign(state.score) > 0 ?
+          (state.uiState = "won") :
+          (state.uiState = "lost")
       }
     },
   },
-  actions: {},
-  modules: {},
 })
