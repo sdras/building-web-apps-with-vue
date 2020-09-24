@@ -31,13 +31,15 @@ This workshop is mostly spent live coding, and I get a lot of questions about my
 
 ## Directories
 
-### Game warmup
+### Game Application
+Built with Vue CLI
 
-- game-resources- resources and materials for the game
+- gameresources- resources and materials for the game
 - game-problem
 - game-solution
 
 ### Food Application
+Built with Nuxt
 
 This is the article I wrote that [shows you how to set up an API with AWS with Lambda and DynamoDB](https://www.netlify.com/guides/creating-an-api-with-aws-lambda-dynamodb-and-api-gateway/api-gateway/?utm_source=github&utm_medium=api-sd&utm_campaign=devex) (we will use this API in our course)
 
