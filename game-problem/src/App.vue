@@ -3,8 +3,17 @@
     <div class="contain">
       <Modal v-if="uiState === 'start'" class="beginmodal modal">
         <h2>Which hooman do you want to be?</h2>
-        <p v-for="option in characterChoices" :key="option" class="char-chooser">
-          <input v-model="characterinput" :id="option" :value="option" type="radio" />
+        <p
+          v-for="option in characterChoices"
+          :key="option"
+          class="char-chooser"
+        >
+          <input
+            v-model="characterinput"
+            :id="option"
+            :value="option"
+            type="radio"
+          />
           <label for="option">{{ option }}</label>
           <br />
         </p>
@@ -15,10 +24,22 @@
         <svg viewBox="0 -180 1628 1180" class="main">
           <defs>
             <clipPath id="bottom-clip">
-              <rect class="bottom-clip-path" x="1131.5" y="546.5" width="406" height="1000" />
+              <rect
+                class="bottom-clip-path"
+                x="1131.5"
+                y="546.5"
+                width="406"
+                height="1000"
+              />
             </clipPath>
             <clipPath id="top-clip">
-              <rect class="top-clip-path" x="1131.5" y="69.5" width="406" height="473" />
+              <rect
+                class="top-clip-path"
+                x="1131.5"
+                y="69.5"
+                width="406"
+                height="473"
+              />
             </clipPath>
           </defs>
 
@@ -32,7 +53,9 @@
             y="930"
             style="font: normal 45px 'Recursive; text-transform: uppercase;"
             class="text"
-          >{{ character }}</text>
+          >
+            {{ character }}
+          </text>
 
           <path fill="#f0959f" d="M0 842h657v192H0z" />
 
@@ -69,7 +92,9 @@
 
         <div class="zombietalk">
           <p v-for="character in shuffle(characterChoices)" :key="character">
-            <button @click="pickQuestion(character)">{{ questions[questionIndex][character] }}</button>
+            <button @click="pickQuestion(character)">
+              {{ questions[questionIndex][character] }}
+            </button>
           </p>
         </div>
       </section>
