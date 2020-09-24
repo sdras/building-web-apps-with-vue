@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="contain">
-      <GamestateStart v-if="uiState === 'start'" class="modal">
+      <GamestateStart v-if="uiState === 'start'">
         <h2>Which hooman do you want to be?</h2>
         <p
           v-for="option in characterChoices"
