@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <div class="contain">
-      <modal v-if="uiState === 'start'" class="beginmodal modal">
+      <GamestateStart v-if="uiState === 'start'" class="modal">
         <h2>Which hooman do you want to be?</h2>
         <p
           v-for="option in characterChoices"
           :key="option"
-          class="char-chooser"
+          class="character-choices"
         >
           <input
             v-model="characterinput"
@@ -18,7 +18,7 @@
           <br />
         </p>
         <button @click="pickCharacter">Pick your character</button>
-      </modal>
+      </GamestateStart>
 
       <section v-else-if="uiState === 'characterChosen'">
         <svg viewBox="0 -180 1628 1180" class="main">
@@ -43,11 +43,11 @@
             </clipPath>
           </defs>
 
-          <friend />
-          <score />
+          <Friend />
+          <Score />
 
-          <component :is="character" class="character-clip" />
-          <zombie class="zombie-clip" />
+          <component :is="character" class="character-clip"></component>
+          <Zombie class="zombie-clip" />
 
           <text
             x="1000"
@@ -100,39 +100,39 @@
         </div>
       </section>
 
-      <final-result v-else />
+      <GamestateFinish v-else />
     </div>
   </div>
 </template>
 
 <script>
-import { mapState } from "vuex";
-import gsap from "gsap";
+import { mapState } from "vuex"
+import gsap from "gsap"
 
-import Modal from "@/components/Modal.vue";
-import Score from "@/components/Score.vue";
-import Baker from "@/components/Baker.vue";
-import Friend from "@/components/Friend.vue";
-import Artist from "@/components/Artist.vue";
-import Zombie from "@/components/Zombie.vue";
-import Mechanic from "@/components/Mechanic.vue";
-import FinalResult from "@/components/FinalResult.vue";
+import Score from "@/components/Score.vue"
+import Baker from "@/components/Baker.vue"
+import Friend from "@/components/Friend.vue"
+import Artist from "@/components/Artist.vue"
+import Zombie from "@/components/Zombie.vue"
+import Mechanic from "@/components/Mechanic.vue"
+import GamestateStart from "@/components/GamestateStart.vue"
+import GamestateFinish from "@/components/GamestateFinish.vue"
 
 export default {
   components: {
-    Modal,
     Score,
     Baker,
     Friend,
     Artist,
     Zombie,
     Mechanic,
-    FinalResult,
+    GamestateStart,
+    GamestateFinish,
   },
   data() {
     return {
       characterinput: "",
-    };
+    }
   },
   computed: {
     ...mapState([
@@ -146,29 +146,29 @@ export default {
   },
   methods: {
     pickCharacter() {
-      this.$store.commit("updateCharacter", this.characterinput);
-      this.$store.commit("updateUIState", "characterChosen");
+      this.$store.commit("updateCharacter", this.characterinput)
+      this.$store.commit("updateUIState", "characterChosen")
     },
     pickQuestion(character) {
-      this.$store.commit("pickQuestion", character);
+      this.$store.commit("pickQuestion", character)
     },
     shuffle(array) {
       for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
+        const j = Math.floor(Math.random() * (i + 1))
+        ;[array[i], array[j]] = [array[j], array[i]]
       }
-      return array;
+      return array
     },
   },
   watch: {
     score(newValue, oldValue) {
-      console.log(oldValue);
+      console.log(oldValue)
       gsap.to(".bottom-clip-path, .top-clip-path", {
         y: -newValue * 6,
-      });
+      })
     },
   },
-};
+}
 </script>
 
 <style lang="scss">
@@ -223,7 +223,7 @@ svg.main,
   border-radius: 20px;
 }
 
-.char-chooser {
+.character-choices {
   margin: 5px 0;
 }
 
