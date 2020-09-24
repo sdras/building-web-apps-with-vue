@@ -39,6 +39,8 @@ This workshop is mostly spent live coding, and I get a lot of questions about my
 
 ### Food Application
 
+This is the article I wrote that [shows you how to set up an API with AWS with Lambda and DynamoDB](https://www.netlify.com/guides/creating-an-api-with-aws-lambda-dynamodb-and-api-gateway/api-gateway/?utm_source=github&utm_medium=api-sd&utm_campaign=devex) (we will use this API in our course)
+
 - foodapp-resources- resources and materials for Food application
 - foodapp-problem1
 - foodapp-solution1
