@@ -19,7 +19,9 @@
               <span v-if="item.options">- {{ item.options }}</span>
             </td>
             <td>
-              <span v-for="addon in item.addOns" :key="addon" class="comma">{{ addon }}</span>
+              <span v-for="addon in item.addOns" :key="addon" class="comma">{{
+                addon
+              }}</span>
             </td>
             <td>{{ item.count }}</td>
             <td>{{ item.combinedPrice }}</td>
@@ -31,6 +33,8 @@
         </tbody>
       </table>
     </section>
+
+    <AppEmptyCart v-else />
   </main>
 </template>
 
@@ -39,7 +43,7 @@ import AppEmptyCart from "@/components/AppEmptyCart.vue";
 
 export default {
   components: {
-    AppEmptyCart,
+    AppEmptyCart
   },
   computed: {
     cart() {
@@ -47,10 +51,9 @@ export default {
     },
     totalPrice() {
       return this.$store.getters.totalPrice;
-    },
-  },
+    }
+  }
 };
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
