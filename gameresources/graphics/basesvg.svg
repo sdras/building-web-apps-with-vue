@@ -1,4 +1,4 @@
-<svg viewBox="0 -180 1628 1180" class="main">
+<svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 -180 1628 1180" class="main">
   <defs>
     <clipPath id="bottom-clip">
       <rect class="bottom-clip-path" x="1131.5" y="546.5" width="406" height="1000" />
@@ -11,7 +11,7 @@
   <text
     x="1000"
     y="930"
-    style="font: normal 45px 'Recursive; text-transform: uppercase;"
+    style="font: normal 45px 'Recursive'; text-transform: uppercase;"
     class="text"
   >Character Name</text>
 
